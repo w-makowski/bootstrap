@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+
+
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-earth-europe"></i>
+        WorldExplorer
+      </a>
+      <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-toggle="collapse" aria-expanded="false" data-mdb-target="#navbarNav">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Strona główna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#offer">Oferta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Nasz zespół</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-image vh-100">
+    <div class="mask hero-mask">
+      <div class="container d-flex justify-content-center align-items-center h-100">
+        <div class="text-white text-center">
+          <h1 class="display-3 fw-bold mb-3">Odkryj świat z WorldExplorer</h1>
+          <p class="lead mb-4">Podróże, które zmieniają perspektywę</p>
+          <a class="btn btn-secondary btn-lg btn-rounded" href="#offer" role="button" data-mdb-ripple-init>Zobacz oferty</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja z tekstem i zdjęciem w stosunku 1 do 3 -->
+  <section class="text-image-section" id="about">
+    <div class="container">
+      <h2 class="text-center mb-5">O nas</h2>
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          <h3>WorldExplorer - Twój przewodnik po świecie</h3>
+          <p>Od ponad 15 lat organizujemy niezapomniane podróże dla tysięcy klientów. Naszą misją jest łączenie ludzi z kulturami, poszerzanie horyzontów i tworzenie niezapomnianych wspomnień.</p>
+          <p>Podróżowanie to nie tylko odwiedzanie nowych miejsc, ale także poznawanie siebie. Dlatego każdą wycieczkę planujemy z myślą o wyjątkowych doświadczeniach.</p>
+        </div>
+        <div class="col-lg-9">
+          <div class="hover-overlay hover-zoom hover-shadow">
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/041.jpg" class="img-fluid rounded shadow-lg" alt="Zdjęcie zespołu World Explorer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja z cytatem -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <blockquote class="blockquote">
+            <p class="mb-0 fs-3 fst-italic">"Podróż tysiąca mil zaczyna się od pierwszego kroku."</p>
+            <footer class="blockquote-footer mt-3">Lao Tzu</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Oferty -->
+  <section id="offer" class="offers-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Nasze najpopularniejsze oferty</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-5">
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.jpg" class="card-img-top" alt="Grecja">
+            <div class="card-body">
+              <h5 class="card-title">Grecja - Wyspy Cykladzkie <span class="badge badge-primary">New</span></h5>
+              <p class="card-text">Odkryj piękno białych domów na tle błękitnego morza. 10 dni niezapomnianych wrażeń.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary fw-bold">od 3 499 zł</span>
+                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal1">Szczegóły</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-5">
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.jpg" class="card-img-top" alt="Włochy">
+            <div class="card-body">
+              <h5 class="card-title">Włochy - Toskania</h5>
+              <p class="card-text">Winnice, historyczne miasta i toskańska kuchnia. 7 dni we włoskim stylu.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary fw-bold">od 2 899 zł</span>
+                <button type="button" class="btn btn-outline-primary btn-rounded"data-bs-toggle="modal" data-bs-target="#offerModal2">Szczegóły</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-5">
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.jpg" class="card-img-top" alt="Tajlandia">
+            <div class="card-body">
+              <h5 class="card-title">Tajlandia - Bangkok i wyspy</h5>
+              <p class="card-text">Pulsujące miasto i rajskie plaże. 14 dni egzotycznej przygody.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary fw-bold">od 5 799 zł</span>
+                <button type="button" class="btn btn-outline-primary btn-rounded"data-bs-toggle="modal" data-bs-target="#offerModal3">Szczegóły</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-5">
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/019.jpg" class="card-img-top" alt="Japonia">
+            <div class="card-body">
+              <h5 class="card-title">Japonia - Tokio i Kioto</h5>
+              <p class="card-text">Zanurz się w fascynującej kulturze Japonii. 10 dni zwiedzania Tokio, Kioto i okolic.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary fw-bold">od 4 299 zł</span>
+                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal4">Szczegóły</button>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-5">
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/020.jpg" class="card-img-top" alt="Hiszpania">
+            <div class="card-body">
+              <h5 class="card-title">Hiszpania - Costa Brava</h5>
+              <p class="card-text">Piękne plaże, ciepłe morze i hiszpańska kultura. 7 dni wypoczynku na Costa Brava.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary fw-bold">od 2 199 zł</span>
+                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal5">Szczegóły</button>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-5">
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/021.jpg" class="card-img-top" alt="Islandia">
+            <div class="card-body">
+              <h5 class="card-title">Islandia - Złoty Krąg</h5>
+              <p class="card-text">Zanurz się w magicznych krajobrazach Islandii. 6 dni pełnych natury, gejzerów i wodospadów.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-primary fw-bold">od 3 799 zł</span>
+                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal6">Szczegóły</button>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <nav class="my-4" aria-label="...">
+      <ul class="pagination pagination-circle justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#offer" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item active" aria-current="page">
+          <a class="page-link" href="#offer">1 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#offer">2</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#offer">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="offerModal1" tabindex="-1" aria-labelledby="offerModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="offerModalLabel1">Grecja - Wyspy Cykladzkie</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+            </div>
+            <div class="modal-body">
+                🌊 Odkryj białe domy na tle błękitnego morza!  
+                ✈️ 10 dni niezapomnianych wrażeń, w tym Santorini i Mykonos.  
+                🏝️ W cenie: przelot, hotel, wyżywienie i atrakcje!  
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                <button type="button" class="btn btn-primary">Rezerwuj</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Sekcja z kontrolką Carousel i Cards (pracownicy) -->
+  <section id="team" class="bg-light team-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Nasz zespół</h2>
+      <div id="teamCarousel" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+        <div class="carousel-indicators">
+          <button type="button" data-mdb-target="#teamCarousel" data-mdb-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-mdb-target="#teamCarousel" data-mdb-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Pierwsza strona karuzeli -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4 team-card">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.jpg" class="card-img-top" alt="Anna Kowalska">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Anna Kowalska</h5>
+                    <p class="text-muted">Dyrektor Biura</p>
+                    <p class="card-text">Pasjonatka podróży z 15-letnim doświadczeniem w branży turystycznej.</p>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 team-card">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.jpg" class="card-img-top" alt="Jan Nowak">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Jan Nowak</h5>
+                    <p class="text-muted">Kierownik Wycieczek</p>
+                    <p class="card-text">Ekspert od kierunków egzotycznych. Odwiedził ponad 50 krajów.</p>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 team-card">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.jpg" class="card-img-top" alt="Maria Wiśniewska">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Maria Wiśniewska</h5>
+                    <p class="text-muted">Specjalista ds. Rezerwacji</p>
+                    <p class="card-text">Dba o każdy szczegół Twojej podróży. Miłośniczka włoskiej kuchni.</p>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Druga strona karuzeli -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 team-card">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.jpg" class="card-img-top" alt="Piotr Zieliński">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Piotr Zieliński</h5>
+                    <p class="text-muted">Pilot Wycieczek</p>
+                    <p class="card-text">Pasjonat historii i lokalnych tradycji. Zna 4 języki obce.</p>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 team-card">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.jpg" class="card-img-top" alt="Karolina Dąbrowska">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Karolina Dąbrowska</h5>
+                    <p class="text-muted">Specjalista ds. Marketingu</p>
+                    <p class="card-text">Kreatywna dusza zespołu. Uwielbia podróże fotograficzne.</p>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-pinterest"></i></a>
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 team-card">
+                <div class="card h-100 shadow-sm">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/018.jpg" class="card-img-top" alt="Tomasz Wójcik">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Tomasz Wójcik</h5>
+                    <p class="text-muted">Konsultant ds. Podróży</p>
+                    <p class="card-text">Ekspert od wyjątkowych i niestandardowych wycieczek.</p>
+                    <div class="d-flex justify-content-center">
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-youtube"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-mdb-target="#teamCarousel" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Poprzedni</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-mdb-target="#teamCarousel" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Następny</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja FAQ z wykorzystaniem kontrolki Accordion -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Najczęściej zadawane pytania</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion accordion-flush" id="faqAccordion">
+            <div class="accordion-item rounded-6">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Jak mogę zarezerwować wycieczkę?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Rezerwacji można dokonać na kilka sposobów: przez naszą stronę internetową, telefonicznie pod numerem +48 123 456 789 lub osobiście w naszym biurze. Wystarczy wybrać interesującą Cię ofertę, podać dane uczestników oraz dokonać wpłaty zaliczki w wysokości 30% wartości wycieczki.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-6">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Jakie dokumenty są potrzebne do podróży?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Wymagane dokumenty zależą od miejsca docelowego. W przypadku podróży w obrębie Unii Europejskiej wystarczy ważny dowód osobisty. Przy podróżach poza UE konieczny jest paszport, a w niektórych przypadkach również wiza. Szczegółowe informacje otrzymasz przy rezerwacji wycieczki.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-6">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Czy mogę wykupić ubezpieczenie podróżne?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Tak, oferujemy różne pakiety ubezpieczenia podróżnego, które można dokupić do każdej wycieczki. Podstawowy pakiet ubezpieczenia jest już wliczony w cenę wycieczki, ale zalecamy rozważenie rozszerzonej opcji, szczególnie w przypadku wyjazdów do egzotycznych krajów lub planowania aktywności sportowych.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-6">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Co w przypadku rezygnacji z wycieczki?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-mdb-parent="#faqAccordion">
+                <div class="accordion-body">
+                  W przypadku rezygnacji z wycieczki obowiązują warunki zawarte w umowie. Im bliżej terminu wyjazdu, tym wyższe koszty rezygnacji. Zalecamy wykupienie dodatkowego ubezpieczenia od kosztów rezygnacji, które pokryje ewentualne straty w przypadku nieprzewidzianych okoliczności.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item rounded-6">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Czy oferujecie wycieczki dla dzieci?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-mdb-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Tak, mamy w ofercie wycieczki dedykowane rodzinom z dziećmi. Są to specjalnie przygotowane programy z atrakcjami dla najmłodszych, zakwaterowaniem przyjaznym dla rodzin oraz opieką doświadczonych animatorów. Dodatkowo, dla dzieci często obowiązują zniżki cenowe.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja z wykresem najpopularniejszych kierunków podróży -->
+  <section id="stats" class="chart-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Najpopularniejsze kierunki podróży</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="chart-container">
+            <canvas id="destinationsChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sekcja z formularzem kontaktowym -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Skontaktuj się z nami</h2>
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <form>
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline" data-mdb-input-init>
+                  <input type="text" id="firstName" class="form-control" />
+                  <label class="form-label" for="firstName">Imię</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline" data-mdb-input-init>
+                  <input type="text" id="lastName" class="form-control" />
+                  <label class="form-label" for="lastName">Nazwisko</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-outline mb-4" data-mdb-input-init>
+              <input type="email" id="email" class="form-control" />
+              <label class="form-label" for="email">Email</label>
+            </div>
+            <div class="form-outline mb-4" data-mdb-input-init>
+              <input type="tel" id="phone" class="form-control" />
+              <label class="form-label" for="phone">Telefon</label>
+            </div>
+            <div class="form-outline mb-4">
+              <select class="form-select" id="subject" style="background-color: #e3f2fd;">
+                <option value="" selected disabled>Wybierz temat</option>
+                <option value="1">Informacje o ofercie</option>
+                <option value="2">Rezerwacja</option>
+                <option value="3">Pytanie o cenę</option>
+                <option value="4">Reklamacja</option>
+                <option value="5">Inne</option>
+              </select>
+            </div>
+            <div class="form-outline mb-4" data-mdb-input-init>
+              <textarea class="form-control" id="message" rows="4"></textarea>
+              <label class="form-label" for="message">Wiadomość</label>
+            </div>
+            <div class="form-check mb-4" data-mdb-input-init>
+              <input class="form-check-input" type="checkbox" value="" id="newsletter" />
+              <label class="form-check-label" for="newsletter">
+                Zapisz mnie do newslettera
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-rounded btn-block mb-4">Wyślij</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="row mb-4">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div class="d-flex align-items-start mb-3">
+                <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="mb-1">Adres</h5>
+                  <p class="mb-0">Powstańców Śląskich 95<br>53-332 Wrocław</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start mb-3">
+                <i class="fas fa-phone fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="mb-1">Telefon</h5>
+                  <p class="mb-0">+48 123 456 789</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-start mb-3">
+                <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="mb-1">Email</h5>
+                  <p class="mb-0">kontakt@worldexplorer.pl</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start">
+                <i class="fas fa-clock fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="mb-1">Godziny otwarcia</h5>
+                  <p class="mb-0">Pon-Pt: 9:00 - 18:00<br>Sobota: 10:00 - 14:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-container rounded shadow-sm">
+            <!-- Placeholder for Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7439.728239802223!2d17.016665272744852!3d51.094389123595846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc26aef60d0eb%3A0x46286462cb3383eb!2sSky%20Tower!5e0!3m2!1spl!2spl!4v1742858801291!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <img src="/api/placeholder/800/400" class="img-fluid w-100 h-100" alt="Mapa lokalizacji"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-3">WorldExplorer</h5>
+          <p>Odkrywamy dla Ciebie najpiękniejsze zakątki świata już od 15 lat. Dołącz do tysięcy zadowolonych klientów i przeżyj podróż swoich marzeń.</p>
+          <div class="d-flex">
+            <a href="#" class="btn btn-floating btn-primary me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="btn btn-floating btn-primary me-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="btn btn-floating btn-primary me-2"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="btn btn-floating btn-primary"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Oferta</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white">Wycieczki objazdowe</a></li>
+            <li class="mb-2"><a href="#" class="text-white">All Inclusive</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Last Minute</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Egzotyka</a></li>
+            <li class="mb-2"><a href="#" class="text-white">City Break</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Informacje</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white">O nas</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Kontakt</a></li>
+            <li class="mb-2"><a href="#" class="text-white">FAQ</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Blog</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Dla mediów</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="mb-3">Newsletter</h5>
+          <p>Zapisz się, aby otrzymywać najnowsze oferty i promocje.</p>
+          <div class="form-outline form-white mb-4" data-mdb-input-init>
+            <input type="email" id="newsletterEmail" class="form-control" />
+            <label class="form-label" for="newsletterEmail">Email</label>
+          </div>
+          <button type="submit" class="btn btn-outline-light btn-rounded btn-block">Zapisz się</button>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row align-items-center">
+        <div class="col-md-7 mb-3 mb-md-0">
+          <p class="mb-0">© 2025 WorldExplorer. Wszelkie prawa zastrzeżone.</p>
+        </div>
+        <div class="col-md-5 text-md-end">
+          <a href="#" class="text-white me-3">Polityka prywatności</a>
+          <a href="#" class="text-white">Warunki korzystania</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    <!--Main Navigation-->
+    <!-- <header> -->
+
+    <!-- </header> -->
+    <!--Main Navigation-->
+    
+    <!--Main layout-->
+    <!-- <main> -->
+
+    <!-- </main> -->
+    <!--Main layout-->
+    
+    <!--Footer-->
+    <!-- <footer> -->
+
+    <!-- </footer> -->
+    <!--Footer-->
+
+    <!-- End your project here-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+
+    <script src="js/chart.js"></script>
+  </body>
+</html>

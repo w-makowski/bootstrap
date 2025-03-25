@@ -1,3 +1,17 @@
+// Zamyka navbar po kliknięciu na link
+const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+navbarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const navbarCollapse = document.getElementById('navbarNav');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    
+    // Sprawdza, czy navbar jest rozwinięty
+    if (navbarCollapse.classList.contains('show')) {
+      navbarToggler.click(); // Symuluje kliknięcie w przycisk, aby zamknąć navbar
+    }
+  });
+});
+
 // Inicjalizacja wykresu najpopularniejszych kierunków
 document.addEventListener('DOMContentLoaded', function() {
     const ctx = document.getElementById('destinationsChart').getContext('2d');

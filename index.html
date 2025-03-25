@@ -19,7 +19,7 @@
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
+
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
 
@@ -28,7 +28,7 @@
   </head>
   <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <nav id="navbar-scroll" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <i class="fas fa-earth-europe"></i>
@@ -40,7 +40,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Strona główna</a>
+            <a class="nav-link" href="#hero">Strona główna</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#offer">Oferta</a>
@@ -58,760 +58,781 @@
       </div>
     </div>
   </nav>
+<!--  <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">-->
+<!--    <a class="navbar-brand" href="#">Navbar</a>-->
+<!--    <ul class="nav nav-pills">-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#scrollspyHeading1">First</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#scrollspyHeading2">Second</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item dropdown">-->
+<!--        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>-->
+<!--        <ul class="dropdown-menu">-->
+<!--          <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>-->
+<!--          <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>-->
+<!--          <li><hr class="dropdown-divider"></li>-->
+<!--          <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>-->
+<!--        </ul>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
 
   <!-- Hero Section -->
-  <section class="hero-section bg-image vh-100">
-    <div class="mask hero-mask">
-      <div class="container d-flex justify-content-center align-items-center h-100">
-        <div class="text-white text-center">
-          <h1 class="display-3 fw-bold mb-3">Odkryj świat z WorldExplorer</h1>
-          <p class="lead mb-4">Podróże, które zmieniają perspektywę</p>
-          <a class="btn btn-secondary btn-lg btn-rounded" href="#offer" role="button" data-mdb-ripple-init>Zobacz oferty</a>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-scroll" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      <section id="hero" class="hero-section bg-image vh-100">
+        <div class="mask hero-mask">
+          <div class="container d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h1 class="display-3 fw-bold mb-3">Odkryj świat z WorldExplorer</h1>
+              <p class="lead mb-4">Podróże, które zmieniają perspektywę</p>
+              <a class="btn btn-secondary btn-lg btn-rounded" href="#offer" role="button" data-mdb-ripple-init>Zobacz oferty</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sekcja z tekstem i zdjęciem w stosunku 1 do 3 -->
-  <section class="text-image-section" id="about">
-    <div class="container">
-      <h2 class="text-center mb-5">O nas</h2>
-      <div class="row align-items-center">
-        <div class="col-lg-3">
-          <h3>WorldExplorer - Twój przewodnik po świecie</h3>
-          <p>Od ponad 15 lat organizujemy niezapomniane podróże dla tysięcy klientów. Naszą misją jest łączenie ludzi z kulturami, poszerzanie horyzontów i tworzenie niezapomnianych wspomnień.</p>
-          <p>Podróżowanie to nie tylko odwiedzanie nowych miejsc, ale także poznawanie siebie. Dlatego każdą wycieczkę planujemy z myślą o wyjątkowych doświadczeniach.</p>
-        </div>
-        <div class="col-lg-9">
-          <div class="hover-overlay hover-zoom hover-shadow">
-            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/041.jpg" class="img-fluid rounded shadow-lg" alt="Zdjęcie zespołu World Explorer">
+      </section>
+    <!-- Sekcja z tekstem i zdjęciem w stosunku 1 do 3 -->
+    <section class="text-image-section" id="about">
+      <div class="container">
+        <h2 class="text-center mb-5">O nas</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <h3>WorldExplorer - Twój przewodnik po świecie</h3>
+            <p>Od ponad 15 lat organizujemy niezapomniane podróże dla tysięcy klientów. Naszą misją jest łączenie ludzi z kulturami, poszerzanie horyzontów i tworzenie niezapomnianych wspomnień.</p>
+            <p>Podróżowanie to nie tylko odwiedzanie nowych miejsc, ale także poznawanie siebie. Dlatego każdą wycieczkę planujemy z myślą o wyjątkowych doświadczeniach.</p>
+          </div>
+          <div class="col-lg-9">
+            <div class="hover-overlay hover-zoom hover-shadow">
+              <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/041.jpg" class="img-fluid rounded shadow-lg" alt="Zdjęcie zespołu World Explorer">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sekcja z cytatem -->
-  <section class="quote-section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <blockquote class="blockquote">
-            <p class="mb-0 fs-3 fst-italic">"Podróż tysiąca mil zaczyna się od pierwszego kroku."</p>
-            <footer class="blockquote-footer mt-3">Lao Tzu</footer>
-          </blockquote>
+    <!-- Sekcja z cytatem -->
+    <section class="quote-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <blockquote class="blockquote">
+              <p class="mb-0 fs-3 fst-italic">"Podróż tysiąca mil zaczyna się od pierwszego kroku."</p>
+              <footer class="blockquote-footer mt-3">Lao Tzu</footer>
+            </blockquote>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Oferty -->
-  <section id="offer" class="offers-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Nasze najpopularniejsze oferty</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-5">
-            <img src="img/places/cyclades/cyklady1.jpg" class="card-img-top" alt="Grecja">
-            <div class="card-body">
-              <h5 class="card-title">Grecja - Wyspy Cykladzkie <span class="badge badge-primary">New</span></h5>
-              <p class="card-text">Odkryj piękno białych domów na tle błękitnego morza. 10 dni niezapomnianych wrażeń.</p>
-              <div class="d-flex justify-content-between align-items-center">
+    <!-- Oferty -->
+    <section id="offer" class="offers-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Nasze najpopularniejsze oferty</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-5">
+              <img src="img/places/cyclades/cyklady1.jpg" class="card-img-top offer-img" alt="Grecja">
+              <div class="card-body">
+                <h5 class="card-title">Grecja - Wyspy Cykladzkie <span class="badge badge-primary">New</span></h5>
+                <p class="card-text">Odkryj piękno białych domów na tle błękitnego morza. 10 dni niezapomnianych wrażeń.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">od 3 499 zł</span>
+                  <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal1" data-mdb-ripple-init>Szczegóły</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-5">
+              <img src="img/places/tuscany/toskania1.jpg" class="card-img-top offer-img" alt="Włochy">
+              <div class="card-body">
+                <h5 class="card-title">Włochy - Toskania</h5>
+                <p class="card-text">Winnice, historyczne miasta i toskańska kuchnia. 7 dni we włoskim stylu.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">od 2 899 zł</span>
+                  <button type="button" class="btn btn-outline-primary btn-rounded"data-bs-toggle="modal" data-bs-target="#offerModal2" data-mdb-ripple-init>Szczegóły</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-5">
+              <img src="img/places/thailand/tajlandia1.jpg" class="card-img-top offer-img" alt="Tajlandia">
+              <div class="card-body">
+                <h5 class="card-title">Tajlandia - Bangkok i wyspy</h5>
+                <p class="card-text">Pulsujące miasto i rajskie plaże. 14 dni egzotycznej przygody.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">od 5 799 zł</span>
+                  <button type="button" class="btn btn-outline-primary btn-rounded"data-bs-toggle="modal" data-bs-target="#offerModal3" data-mdb-ripple-init>Szczegóły</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-5">
+              <img src="img/places/japan/japonia1.jpg" class="card-img-top offer-img" alt="Japonia">
+              <div class="card-body">
+                <h5 class="card-title">Japonia - Tokio i Kioto</h5>
+                <p class="card-text">Zanurz się w fascynującej kulturze Japonii. 10 dni zwiedzania Tokio, Kioto i okolic.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">od 4 299 zł</span>
+                  <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal4" data-mdb-ripple-init>Szczegóły</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-5">
+              <img src="img/places/costabrava/costabrava1.jpeg" class="card-img-top offer-img" alt="Hiszpania">
+              <div class="card-body">
+                <h5 class="card-title">Hiszpania - Costa Brava</h5>
+                <p class="card-text">Piękne plaże, ciepłe morze i hiszpańska kultura. 7 dni wypoczynku na Costa Brava.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">od 2 199 zł</span>
+                  <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal5" data-mdb-ripple-init>Szczegóły</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-5">
+              <img src="img/places/iceland/islandia1.jpg" class="card-img-top offer-img" alt="Islandia">
+              <div class="card-body">
+                <h5 class="card-title">Islandia - Złoty Krąg <span class="badge badge-primary">New</span></h5>
+                <p class="card-text">Zanurz się w magicznych krajobrazach Islandii. 6 dni pełnych natury, gejzerów i wodospadów.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">od 3 799 zł</span>
+                  <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal6" data-mdb-ripple-init>Szczegóły</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!--    &lt;!&ndash; Pagination &ndash;&gt;-->
+  <!--    <nav class="my-4" aria-label="...">-->
+  <!--      <ul class="pagination pagination-circle justify-content-center">-->
+  <!--        <li class="page-item">-->
+  <!--          <a class="page-link" href="#offer" tabindex="-1" aria-disabled="true">Previous</a>-->
+  <!--        </li>-->
+  <!--        <li class="page-item active" aria-current="page">-->
+  <!--          <a class="page-link" href="#offer">1 <span class="sr-only">(current)</span></a>-->
+  <!--        </li>-->
+  <!--        <li class="page-item"><a class="page-link" href="#offer">2</a></li>-->
+  <!--        <li class="page-item">-->
+  <!--          <a class="page-link" href="#offer">Next</a>-->
+  <!--        </li>-->
+  <!--      </ul>-->
+  <!--    </nav>-->
+    </section>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="offerModal1" tabindex="-1" aria-labelledby="offerModalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="offerModalLabel1">Grecja - Wyspy Cykladzkie <span class="badge badge-primary">New</span></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+              </div>
+              <div class="modal-body">
+
+                <div id="carouselExampleControls1" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleControls1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleControls1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleControls1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="img/places/cyclades/cyklady1.jpg" class="d-block w-100" alt="Grecja 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/places/cyclades/cyklady2.jpg" class="d-block w-100" alt="Grecja 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/places/cyclades/cyklady3.avif" class="d-block w-100" alt="Grecja 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+                  🌊 Odkryj białe domy na tle błękitnego morza! <br>
+                  ✈️ 10 dni niezapomnianych wrażeń, w tym Santorini i Mykonos.  <br>
+                  🏝️ W cenie: przelot, hotel, wyżywienie i atrakcje!  <br>
+              </div>
+              <div class="modal-footer d-flex justify-content-between">
                 <span class="text-primary fw-bold">od 3 499 zł</span>
-                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal1" data-mdb-ripple-init>Szczegóły</button>
-              </div>
+                <div>
+                    <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
+                    <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
+                </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-5">
-            <img src="img/places/tuscany/toskania1.jpg" class="card-img-top" alt="Włochy">
-            <div class="card-body">
-              <h5 class="card-title">Włochy - Toskania</h5>
-              <p class="card-text">Winnice, historyczne miasta i toskańska kuchnia. 7 dni we włoskim stylu.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="text-primary fw-bold">od 2 899 zł</span>
-                <button type="button" class="btn btn-outline-primary btn-rounded"data-bs-toggle="modal" data-bs-target="#offerModal2" data-mdb-ripple-init>Szczegóły</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-5">
-            <img src="img/places/thailand/tajlandia1.jpg" class="card-img-top" alt="Tajlandia">
-            <div class="card-body">
-              <h5 class="card-title">Tajlandia - Bangkok i wyspy</h5>
-              <p class="card-text">Pulsujące miasto i rajskie plaże. 14 dni egzotycznej przygody.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="text-primary fw-bold">od 5 799 zł</span>
-                <button type="button" class="btn btn-outline-primary btn-rounded"data-bs-toggle="modal" data-bs-target="#offerModal3" data-mdb-ripple-init>Szczegóły</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-5">
-            <img src="img/places/japan/japonia1.jpg" class="card-img-top" alt="Japonia">
-            <div class="card-body">
-              <h5 class="card-title">Japonia - Tokio i Kioto</h5>
-              <p class="card-text">Zanurz się w fascynującej kulturze Japonii. 10 dni zwiedzania Tokio, Kioto i okolic.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="text-primary fw-bold">od 4 299 zł</span>
-                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal4" data-mdb-ripple-init>Szczegóły</button>
-              </div>
-            </div>
-          </div>
-        </div>        
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-5">
-            <img src="img/places/costabrava/costabrava1.jpeg" class="card-img-top" alt="Hiszpania">
-            <div class="card-body">
-              <h5 class="card-title">Hiszpania - Costa Brava</h5>
-              <p class="card-text">Piękne plaże, ciepłe morze i hiszpańska kultura. 7 dni wypoczynku na Costa Brava.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="text-primary fw-bold">od 2 199 zł</span>
-                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal5" data-mdb-ripple-init>Szczegóły</button>
-              </div>
-            </div>
-          </div>
-        </div>        
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-5">
-            <img src="img/places/iceland/islandia1.jpg" class="card-img-top" alt="Islandia">
-            <div class="card-body">
-              <h5 class="card-title">Islandia - Złoty Krąg <span class="badge badge-primary">New</span></h5>
-              <p class="card-text">Zanurz się w magicznych krajobrazach Islandii. 6 dni pełnych natury, gejzerów i wodospadów.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="text-primary fw-bold">od 3 799 zł</span>
-                <button type="button" class="btn btn-outline-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#offerModal6" data-mdb-ripple-init>Szczegóły</button>
-              </div>
-            </div>
-          </div>
-        </div>        
       </div>
     </div>
 
-    <!-- Pagination -->
-    <nav class="my-4" aria-label="...">
-      <ul class="pagination pagination-circle justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#offer" tabindex="-1" aria-disabled="true">Previous</a>
-        </li>
-        <li class="page-item active" aria-current="page">
-          <a class="page-link" href="#offer">1 <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#offer">2</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#offer">Next</a>
-        </li>
-      </ul>
-    </nav>
-  </section>
-
-  <!-- MODALS -->
-  <div class="modal fade" id="offerModal1" tabindex="-1" aria-labelledby="offerModalLabel1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="offerModal2" tabindex="-1" aria-labelledby="offerModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="offerModalLabel1">Grecja - Wyspy Cykladzkie <span class="badge badge-primary">New</span></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
-            </div>
-            <div class="modal-body">
-
-              <div id="carouselExampleControls1" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleControls1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleControls1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleControls1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="offerModalLabel2">Włochy - Toskania</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExampleControls2" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/places/tuscany/toskania1.jpg" class="d-block w-100" alt="Włochy 1">
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/places/cyclades/cyklady1.jpg" class="d-block w-100" alt="Grecja 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/places/cyclades/cyklady2.jpg" class="d-block w-100" alt="Grecja 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/places/cyclades/cyklady3.avif" class="d-block w-100" alt="Grecja 3">
-                  </div>
+                <div class="carousel-item">
+                  <img src="img/places/tuscany/toskania2.jpeg" class="d-block w-100" alt="Włochy 2">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                  <img src="img/places/tuscany/toskania3.jpg" class="d-block w-100" alt="Włochy 3">
+                </div>
               </div>
-
-                🌊 Odkryj białe domy na tle błękitnego morza! <br> 
-                ✈️ 10 dni niezapomnianych wrażeń, w tym Santorini i Mykonos.  <br>
-                🏝️ W cenie: przelot, hotel, wyżywienie i atrakcje!  <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="modal-footer d-flex justify-content-between">
-              <span class="text-primary fw-bold">od 3 499 zł</span>
-              <div>
-                  <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
-                  <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
-              </div>
+            🍷 Zwiedzaj winnice, historyczne miasta i delektuj się toskańską kuchnią. <br>
+            🏰 7 dni relaksu i przygody w sercu Włoch!  <br>
+            🌿 W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
           </div>
-        </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="offerModal2" tabindex="-1" aria-labelledby="offerModalLabel2" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="offerModalLabel2">Włochy - Toskania</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
-        </div>
-        <div class="modal-body">
-          <div id="carouselExampleControls2" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleControls2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleControls2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleControls2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div class="modal-footer d-flex justify-content-between">
+            <span class="text-primary fw-bold">od 2 899 zł</span>
+            <div>
+                <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
+                <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/places/tuscany/toskania1.jpg" class="d-block w-100" alt="Włochy 1">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/tuscany/toskania2.jpeg" class="d-block w-100" alt="Włochy 2">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/tuscany/toskania3.jpg" class="d-block w-100" alt="Włochy 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          🍷 Zwiedzaj winnice, historyczne miasta i delektuj się toskańską kuchnią. <br> 
-          🏰 7 dni relaksu i przygody w sercu Włoch!  <br>
-          🌿 W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
         </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <span class="text-primary fw-bold">od 2 899 zł</span>
-          <div>
-              <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
-              <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
-          </div>
-      </div>
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="modal fade" id="offerModal3" tabindex="-1" aria-labelledby="offerModalLabel3" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="offerModalLabel3">Tajlandia - Bangkok i wyspy</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
-        </div>
-        <div class="modal-body">
+    <div class="modal fade" id="offerModal3" tabindex="-1" aria-labelledby="offerModalLabel3" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="offerModalLabel3">Tajlandia - Bangkok i wyspy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+          </div>
+          <div class="modal-body">
 
-          <div id="carouselExampleControls3" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleControls3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleControls3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleControls3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div id="carouselExampleControls3" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/places/thailand/tajlandia1.jpg" class="d-block w-100" alt="Tajlandia 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/thailand/tajlandia2.jpg" class="d-block w-100" alt="Tajlandia 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/thailand/tajlandia3.jpg" class="d-block w-100" alt="Tajlandia 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/places/thailand/tajlandia1.jpg" class="d-block w-100" alt="Tajlandia 1">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/thailand/tajlandia2.jpg" class="d-block w-100" alt="Tajlandia 2">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/thailand/tajlandia3.jpg" class="d-block w-100" alt="Tajlandia 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            🌴 14 dni egzotycznej przygody w sercu Azji!  <br>
+            🏖️ Bangkok i rajskie wyspy w jednej ofercie!  <br>
+            🛶 W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
           </div>
-          🌴 14 dni egzotycznej przygody w sercu Azji!  <br>
-          🏖️ Bangkok i rajskie wyspy w jednej ofercie!  <br>
-          🛶 W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
+          <div class="modal-footer d-flex justify-content-between">
+            <span class="text-primary fw-bold">od 5 799 zł</span>
+            <div>
+                <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
+                <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
+            </div>
         </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <span class="text-primary fw-bold">od 5 799 zł</span>
-          <div>
-              <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
-              <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
-          </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="offerModal4" tabindex="-1" aria-labelledby="offerModalLabel4" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="offerModalLabel4">Japonia - Tokio i Kioto</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
         </div>
-        <div class="modal-body">
-          <div id="carouselExampleControls4" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleControls4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleControls4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleControls4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/places/japan/japonia1.jpg" class="d-block w-100" alt="Tokio 1">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/japan/japonia2.jpg" class="d-block w-100" alt="Kioto 2">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/japan/japonia3.jpg" class="d-block w-100" alt="Tokio 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          🏙️ 10 dni w Japonii: zwiedzanie Tokio i Kioto!  <br>
-          🏯 W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
-          🍣 Poznaj kulturę, świątynie i tradycje Japonii.  <br>
-        </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <span class="text-primary fw-bold">od 4 299 zł</span>
-          <div>
-              <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
-              <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
-          </div>
-      </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="offerModal5" tabindex="-1" aria-labelledby="offerModalLabel5" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="offerModalLabel4">Hiszpania - Costa Brava</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
-        </div>
-        <div class="modal-body">
-          <div id="carouselExampleControls5" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleControls5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleControls5" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleControls5" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/places/costabrava/costabrava1.jpeg" class="d-block w-100" alt="Hiszpania 1">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/costabrava/costabrava2.jpg" class="d-block w-100" alt="Hiszpania 2">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/costabrava/costabrava3.jpg" class="d-block w-100" alt="Hiszpania 3">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <div class="modal fade" id="offerModal4" tabindex="-1" aria-labelledby="offerModalLabel4" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="offerModalLabel4">Japonia - Tokio i Kioto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
           </div>
-          🏖️ Odpocznij na złocistych plażach Costa Brava.  <br>
-          🍹 Wspaniała kuchnia, słońce i morze przez 7 dni!  <br>
-          🌞 W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
-        </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <span class="text-primary fw-bold">od 2 199 zł</span>
-          <div>
-              <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
-              <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
-          </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="offerModal6" tabindex="-1" aria-labelledby="offerModalLabel6" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="offerModalLabel6">Islandia - Złoty Krąg <span class="badge badge-primary">New</span></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
-        </div>
-        <div class="modal-body">
-          <div id="carouselExampleControls6" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleControls6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleControls6" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleControls6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div class="modal-body">
+            <div id="carouselExampleControls4" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/places/japan/japonia1.jpg" class="d-block w-100" alt="Tokio 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/japan/japonia2.jpg" class="d-block w-100" alt="Kioto 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/japan/japonia3.jpg" class="d-block w-100" alt="Tokio 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/places/iceland/islandia1.jpg" class="d-block w-100" alt="Islandia 1">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/iceland/islandia2.jpg" class="d-block w-100" alt="Islandia 2">
-              </div>
-              <div class="carousel-item">
-                <img src="img/places/iceland/islandia3.jpeg" class="d-block w-100" alt="Islandia 3">
-              </div>
+            🏙️ 10 dni w Japonii: zwiedzanie Tokio i Kioto!  <br>
+            🏯 W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
+            🍣 Poznaj kulturę, świątynie i tradycje Japonii.  <br>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <span class="text-primary fw-bold">od 4 299 zł</span>
+            <div>
+                <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
+                <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          🌋 7 dni w Islandii - Złoty Krąg!  <br>
-          ❄️ Wulkaniczne krajobrazy, gorące źródła i wodospady.  <br>
-          🏞️ W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
         </div>
-        <div class="modal-footer d-flex justify-content-between">
-          <span class="text-primary fw-bold">od 3 799 zł</span>
-          <div>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
-              <button type="button" class="btn btn-primary">Rezerwuj</button>
-          </div>
-      </div>
+        </div>
       </div>
     </div>
-  </div>
 
-
-
-
-  <!-- Sekcja z kontrolką Carousel i Cards (pracownicy) -->
-  <section id="team" class="bg-light team-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Nasz zespół</h2>
-      <div id="teamCarousel" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
-        <div class="carousel-indicators">
-          <button type="button" data-mdb-target="#teamCarousel" data-mdb-slide-to="0" class="active" aria-current="true"></button>
-          <button type="button" data-mdb-target="#teamCarousel" data-mdb-slide-to="1"></button>
+    <div class="modal fade" id="offerModal5" tabindex="-1" aria-labelledby="offerModalLabel5" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="offerModalLabel5">Hiszpania - Costa Brava</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExampleControls5" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/places/costabrava/costabrava1.jpeg" class="d-block w-100" alt="Hiszpania 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/costabrava/costabrava2.jpg" class="d-block w-100" alt="Hiszpania 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/costabrava/costabrava3.jpg" class="d-block w-100" alt="Hiszpania 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            🏖️ Odpocznij na złocistych plażach Costa Brava.  <br>
+            🍹 Wspaniała kuchnia, słońce i morze przez 7 dni!  <br>
+            🌞 W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <span class="text-primary fw-bold">od 2 199 zł</span>
+            <div>
+                <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Zamknij</button>
+                <button type="button" class="btn btn-primary btn-rounded">Rezerwuj</button>
+            </div>
         </div>
-        <div class="carousel-inner">
-          <!-- Pierwsza strona karuzeli -->
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4 team-card">
-                <div class="card h-100 shadow-sm">
-                  <img src="img/team/may.jpg" class="card-img-top" alt="James May">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">James May</h5>
-                    <p class="text-muted">Dyrektor Biura</p>
-                    <p class="card-text">Pasjonat podróży. Dopilnuje żeby wszystko było ok.</p>
-                    <div class="d-flex justify-content-center">
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="offerModal6" tabindex="-1" aria-labelledby="offerModalLabel6" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="offerModalLabel6">Islandia - Złoty Krąg <span class="badge badge-primary">New</span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExampleControls6" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/places/iceland/islandia1.jpg" class="d-block w-100" alt="Islandia 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/iceland/islandia2.jpg" class="d-block w-100" alt="Islandia 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/places/iceland/islandia3.jpeg" class="d-block w-100" alt="Islandia 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            🌋 7 dni w Islandii - Złoty Krąg!  <br>
+            ❄️ Wulkaniczne krajobrazy, gorące źródła i wodospady.  <br>
+            🏞️ W cenie: przelot, zakwaterowanie, wyżywienie i atrakcje.  <br>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <span class="text-primary fw-bold">od 3 799 zł</span>
+            <div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                <button type="button" class="btn btn-primary">Rezerwuj</button>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Sekcja z kontrolką Carousel i Cards (pracownicy) -->
+    <section id="team" class="bg-light team-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Nasz zespół</h2>
+        <div id="teamCarousel" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+          <div class="carousel-indicators">
+            <button type="button" data-mdb-target="#teamCarousel" data-mdb-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-mdb-target="#teamCarousel" data-mdb-slide-to="1"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- Pierwsza strona karuzeli -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 team-card">
+                  <div class="card h-100 shadow-sm">
+                    <img src="img/team/may.jpg" class="card-img-top" alt="James May">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">James May</h5>
+                      <p class="text-muted">Dyrektor Biura</p>
+                      <p class="card-text">Pasjonat podróży. Dopilnuje żeby wszystko było ok.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4 team-card">
-                <div class="card h-100 shadow-sm">
-                  <img src="img/team/clarkson.jpg" class="card-img-top" alt="Jeremy Clarkson">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Jeremy Clarkson</h5>
-                    <p class="text-muted">Specjalista od Adrenaliny</p>
-                    <p class="card-text">Ekspert od kierunków egzotycznych. Odwiedził ponad 50 krajów.</p>
-                    <div class="d-flex justify-content-center">
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-instagram"></i></a>
+                <div class="col-md-4 team-card">
+                  <div class="card h-100 shadow-sm">
+                    <img src="img/team/clarkson.jpg" class="card-img-top" alt="Jeremy Clarkson">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Jeremy Clarkson</h5>
+                      <p class="text-muted">Specjalista od Adrenaliny</p>
+                      <p class="card-text">Ekspert od kierunków egzotycznych. Odwiedził ponad 50 krajów.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-instagram"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4 team-card">
-                <div class="card h-100 shadow-sm">
-                  <img src="img/team/hammond.jpg" class="card-img-top" alt="Richard Hammond">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Richard Hammond</h5>
-                    <p class="text-muted">Przewodnik turystyczny</p>
-                    <p class="card-text">Dba o każdy szczegół Twojej podróży. Miłośnik egzotycznej kuchni.</p>
-                    <div class="d-flex justify-content-center">
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-twitter"></i></a>
+                <div class="col-md-4 team-card">
+                  <div class="card h-100 shadow-sm">
+                    <img src="img/team/hammond.jpg" class="card-img-top" alt="Richard Hammond">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Richard Hammond</h5>
+                      <p class="text-muted">Przewodnik turystyczny</p>
+                      <p class="card-text">Dba o każdy szczegół Twojej podróży. Miłośnik egzotycznej kuchni.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-twitter"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Druga strona karuzeli -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4 team-card">
-                <div class="card h-100 shadow-sm">
-                  <img src="img/team/anniston.jpg" class="card-img-top" alt="Jennifer Anniston">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Jennifer Anniston</h5>
-                    <p class="text-muted">Menedżer sprzedaży i relacji z klientem</p>
-                    <p class="card-text">Z chęcią omówi z Tobą twój wymarzony wyjazd. Fascynuje się Paryżem.</p>
-                    <div class="d-flex justify-content-center">
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-instagram"></i></a>
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Druga strona karuzeli -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 team-card">
+                  <div class="card h-100 shadow-sm">
+                    <img src="img/team/anniston.jpg" class="card-img-top" alt="Jennifer Anniston">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Jennifer Anniston</h5>
+                      <p class="text-muted">Menedżer sprzedaży i relacji z klientem</p>
+                      <p class="card-text">Z chęcią omówi z Tobą twój wymarzony wyjazd. Fascynuje się Paryżem.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4 team-card">
-                <div class="card h-100 shadow-sm">
-                  <img src="img/team/cox.jpeg" class="card-img-top" alt="Courntey Cox">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Courtney Cox</h5>
-                    <p class="text-muted">Organizator wyjazdów</p>
-                    <p class="card-text">Nie umknie jej żaden szczegół.</p>
-                    <div class="d-flex justify-content-center">
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-pinterest"></i></a>
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-instagram"></i></a>
+                <div class="col-md-4 team-card">
+                  <div class="card h-100 shadow-sm">
+                    <img src="img/team/cox.jpeg" class="card-img-top" alt="Courntey Cox">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Courtney Cox</h5>
+                      <p class="text-muted">Organizator wyjazdów</p>
+                      <p class="card-text">Nie umknie jej żaden szczegół.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-instagram"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-4 team-card">
-                <div class="card h-100 shadow-sm">
-                  <img src="img/team/kudrow.jpg" class="card-img-top" alt="Lisa Kudrow">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Lisa Kudrow</h5>
-                    <p class="text-muted">Specjalista od alternatywnych wycieczek</p>
-                    <p class="card-text">Od muzyki, przez voodoo i duchy. Lisa wie wszystko.</p>
-                    <div class="d-flex justify-content-center">
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-youtube"></i></a>
+                <div class="col-md-4 team-card">
+                  <div class="card h-100 shadow-sm">
+                    <img src="img/team/kudrow.jpg" class="card-img-top" alt="Lisa Kudrow">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Lisa Kudrow</h5>
+                      <p class="text-muted">Specjalista od alternatywnych wycieczek</p>
+                      <p class="card-text">Od muzyki, przez voodoo i duchy. Lisa wie wszystko.</p>
+                      <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-floating mx-1 btn-sm btn-primary"><i class="fab fa-youtube"></i></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-mdb-target="#teamCarousel" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Poprzedni</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-mdb-target="#teamCarousel" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Następny</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-mdb-target="#teamCarousel" data-mdb-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Poprzedni</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#teamCarousel" data-mdb-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Następny</span>
-        </button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sekcja FAQ z wykorzystaniem kontrolki Accordion -->
-  <section id="faq" class="faq-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Najczęściej zadawane pytania</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="accordion accordion-flush" id="faqAccordion">
-            <div class="accordion-item rounded-6">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  Jak mogę zarezerwować wycieczkę?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Rezerwacji można dokonać na kilka sposobów: przez naszą stronę internetową, telefonicznie pod numerem +48 123 456 789 lub osobiście w naszym biurze. Wystarczy wybrać interesującą Cię ofertę, podać dane uczestników oraz dokonać wpłaty zaliczki w wysokości 30% wartości wycieczki.
+    <!-- Sekcja FAQ z wykorzystaniem kontrolki Accordion -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Najczęściej zadawane pytania</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion accordion-flush" id="faqAccordion">
+              <div class="accordion-item rounded-6">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Jak mogę zarezerwować wycieczkę?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Rezerwacji można dokonać na kilka sposobów: przez naszą stronę internetową, telefonicznie pod numerem +48 123 456 789 lub osobiście w naszym biurze. Wystarczy wybrać interesującą Cię ofertę, podać dane uczestników oraz dokonać wpłaty zaliczki w wysokości 30% wartości wycieczki.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item rounded-6">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Jakie dokumenty są potrzebne do podróży?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Wymagane dokumenty zależą od miejsca docelowego. W przypadku podróży w obrębie Unii Europejskiej wystarczy ważny dowód osobisty. Przy podróżach poza UE konieczny jest paszport, a w niektórych przypadkach również wiza. Szczegółowe informacje otrzymasz przy rezerwacji wycieczki.
+              <div class="accordion-item rounded-6">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Jakie dokumenty są potrzebne do podróży?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Wymagane dokumenty zależą od miejsca docelowego. W przypadku podróży w obrębie Unii Europejskiej wystarczy ważny dowód osobisty. Przy podróżach poza UE konieczny jest paszport, a w niektórych przypadkach również wiza. Szczegółowe informacje otrzymasz przy rezerwacji wycieczki.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item rounded-6">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Czy mogę wykupić ubezpieczenie podróżne?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Tak, oferujemy różne pakiety ubezpieczenia podróżnego, które można dokupić do każdej wycieczki. Podstawowy pakiet ubezpieczenia jest już wliczony w cenę wycieczki, ale zalecamy rozważenie rozszerzonej opcji, szczególnie w przypadku wyjazdów do egzotycznych krajów lub planowania aktywności sportowych.
+              <div class="accordion-item rounded-6">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Czy mogę wykupić ubezpieczenie podróżne?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Tak, oferujemy różne pakiety ubezpieczenia podróżnego, które można dokupić do każdej wycieczki. Podstawowy pakiet ubezpieczenia jest już wliczony w cenę wycieczki, ale zalecamy rozważenie rozszerzonej opcji, szczególnie w przypadku wyjazdów do egzotycznych krajów lub planowania aktywności sportowych.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item rounded-6">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Co w przypadku rezygnacji z wycieczki?
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-mdb-parent="#faqAccordion">
-                <div class="accordion-body">
-                  W przypadku rezygnacji z wycieczki obowiązują warunki zawarte w umowie. Im bliżej terminu wyjazdu, tym wyższe koszty rezygnacji. Zalecamy wykupienie dodatkowego ubezpieczenia od kosztów rezygnacji, które pokryje ewentualne straty w przypadku nieprzewidzianych okoliczności.
+              <div class="accordion-item rounded-6">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Co w przypadku rezygnacji z wycieczki?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-mdb-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    W przypadku rezygnacji z wycieczki obowiązują warunki zawarte w umowie. Im bliżej terminu wyjazdu, tym wyższe koszty rezygnacji. Zalecamy wykupienie dodatkowego ubezpieczenia od kosztów rezygnacji, które pokryje ewentualne straty w przypadku nieprzewidzianych okoliczności.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item rounded-6">
-              <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  Czy oferujecie wycieczki dla dzieci?
-                </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-mdb-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Tak, mamy w ofercie wycieczki dedykowane rodzinom z dziećmi. Są to specjalnie przygotowane programy z atrakcjami dla najmłodszych, zakwaterowaniem przyjaznym dla rodzin oraz opieką doświadczonych animatorów. Dodatkowo, dla dzieci często obowiązują zniżki cenowe.
+              <div class="accordion-item rounded-6">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed rounded-6" type="button" data-mdb-collapse-init data-mdb-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Czy oferujecie wycieczki dla dzieci?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-mdb-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Tak, mamy w ofercie wycieczki dedykowane rodzinom z dziećmi. Są to specjalnie przygotowane programy z atrakcjami dla najmłodszych, zakwaterowaniem przyjaznym dla rodzin oraz opieką doświadczonych animatorów. Dodatkowo, dla dzieci często obowiązują zniżki cenowe.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sekcja z wykresem najpopularniejszych kierunków podróży -->
-  <section id="stats" class="chart-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Najpopularniejsze kierunki podróży</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="chart-container">
-            <canvas id="destinationsChart"></canvas>
+    <!-- Sekcja z wykresem najpopularniejszych kierunków podróży -->
+    <section id="stats" class="chart-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Najpopularniejsze kierunki podróży</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="chart-container">
+              <canvas id="destinationsChart"></canvas>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sekcja z formularzem kontaktowym -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2 class="text-center mb-5">Skontaktuj się z nami</h2>
-      <div class="row">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <form>
+    <!-- Sekcja z formularzem kontaktowym -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Skontaktuj się z nami</h2>
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <form>
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline" data-mdb-input-init>
+                    <input type="text" id="firstName" class="form-control" />
+                    <label class="form-label" for="firstName">Imię</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline" data-mdb-input-init>
+                    <input type="text" id="lastName" class="form-control" />
+                    <label class="form-label" for="lastName">Nazwisko</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-outline mb-4" data-mdb-input-init>
+                <input type="email" id="email" class="form-control" />
+                <label class="form-label" for="email">Email</label>
+              </div>
+              <div class="form-outline mb-4" data-mdb-input-init>
+                <input type="tel" id="phone" class="form-control" />
+                <label class="form-label" for="phone">Telefon</label>
+              </div>
+              <div class="form-outline mb-4">
+                <select class="form-select" id="subject" style="background-color: #e3f2fd;">
+                  <option value="" selected disabled>Wybierz temat</option>
+                  <option value="1">Informacje o ofercie</option>
+                  <option value="2">Rezerwacja</option>
+                  <option value="3">Pytanie o cenę</option>
+                  <option value="4">Reklamacja</option>
+                  <option value="5">Inne</option>
+                </select>
+              </div>
+              <div class="form-outline mb-4" data-mdb-input-init>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+                <label class="form-label" for="message">Wiadomość</label>
+              </div>
+              <div class="form-check mb-4" data-mdb-input-init>
+                <input class="form-check-input" type="checkbox" value="" id="newsletter" />
+                <label class="form-check-label" for="newsletter">
+                  Zapisz mnie do newslettera
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-rounded btn-block mb-4">Wyślij</button>
+            </form>
+          </div>
+          <div class="col-lg-6">
             <div class="row mb-4">
-              <div class="col">
-                <div class="form-outline" data-mdb-input-init>
-                  <input type="text" id="firstName" class="form-control" />
-                  <label class="form-label" for="firstName">Imię</label>
+              <div class="col-md-6 mb-4 mb-md-0">
+                <div class="d-flex align-items-start mb-3">
+                  <i class="fas fa-map-marker-alt fa-2x text-primary me-3 hover-shake"></i>
+                  <div>
+                    <h5 class="mb-1">Adres</h5>
+                    <p class="mb-0">Powstańców Śląskich 95<br>53-332 Wrocław</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                  <i class="fas fa-phone fa-2x text-primary me-3 hover-vibrate"></i>
+                  <div>
+                    <h5 class="mb-1">Telefon</h5>
+                    <p class="mb-0">+48 123 456 789</p>
+                  </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-outline" data-mdb-input-init>
-                  <input type="text" id="lastName" class="form-control" />
-                  <label class="form-label" for="lastName">Nazwisko</label>
+              <div class="col-md-6">
+                <div class="d-flex align-items-start mb-3">
+                  <i class="fas fa-envelope fa-2x text-primary me-3 hover-wobble"></i>
+                  <div>
+                    <h5 class="mb-1">Email</h5>
+                    <p class="mb-0">kontakt@worldexplorer.pl</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="form-outline mb-4" data-mdb-input-init>
-              <input type="email" id="email" class="form-control" />
-              <label class="form-label" for="email">Email</label>
-            </div>
-            <div class="form-outline mb-4" data-mdb-input-init>
-              <input type="tel" id="phone" class="form-control" />
-              <label class="form-label" for="phone">Telefon</label>
-            </div>
-            <div class="form-outline mb-4">
-              <select class="form-select" id="subject" style="background-color: #e3f2fd;">
-                <option value="" selected disabled>Wybierz temat</option>
-                <option value="1">Informacje o ofercie</option>
-                <option value="2">Rezerwacja</option>
-                <option value="3">Pytanie o cenę</option>
-                <option value="4">Reklamacja</option>
-                <option value="5">Inne</option>
-              </select>
-            </div>
-            <div class="form-outline mb-4" data-mdb-input-init>
-              <textarea class="form-control" id="message" rows="4"></textarea>
-              <label class="form-label" for="message">Wiadomość</label>
-            </div>
-            <div class="form-check mb-4" data-mdb-input-init>
-              <input class="form-check-input" type="checkbox" value="" id="newsletter" />
-              <label class="form-check-label" for="newsletter">
-                Zapisz mnie do newslettera
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary btn-rounded btn-block mb-4">Wyślij</button>
-          </form>
-        </div>
-        <div class="col-lg-6">
-          <div class="row mb-4">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <div class="d-flex align-items-start mb-3">
-                <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
-                <div>
-                  <h5 class="mb-1">Adres</h5>
-                  <p class="mb-0">Powstańców Śląskich 95<br>53-332 Wrocław</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-start mb-3">
-                <i class="fas fa-phone fa-2x text-primary me-3"></i>
-                <div>
-                  <h5 class="mb-1">Telefon</h5>
-                  <p class="mb-0">+48 123 456 789</p>
+                <div class="d-flex align-items-start">
+                  <i class="fas fa-clock fa-2x text-primary me-3 hover-rotate"></i>
+                  <div>
+                    <h5 class="mb-1">Godziny otwarcia</h5>
+                    <p class="mb-0">Pon-Pt: 9:00 - 18:00<br>Sobota: 10:00 - 14:00</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="d-flex align-items-start mb-3">
-                <i class="fas fa-envelope fa-2x text-primary me-3"></i>
-                <div>
-                  <h5 class="mb-1">Email</h5>
-                  <p class="mb-0">kontakt@worldexplorer.pl</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-start">
-                <i class="fas fa-clock fa-2x text-primary me-3"></i>
-                <div>
-                  <h5 class="mb-1">Godziny otwarcia</h5>
-                  <p class="mb-0">Pon-Pt: 9:00 - 18:00<br>Sobota: 10:00 - 14:00</p>
-                </div>
-              </div>
+            <div class="map-container rounded shadow-sm">
+              <!-- Placeholder for Google Maps -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7439.728239802223!2d17.016665272744852!3d51.094389123595846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc26aef60d0eb%3A0x46286462cb3383eb!2sSky%20Tower!5e0!3m2!1spl!2spl!4v1742858801291!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <!-- <img src="/api/placeholder/800/400" class="img-fluid w-100 h-100" alt="Mapa lokalizacji"> -->
             </div>
-          </div>
-          <div class="map-container rounded shadow-sm">
-            <!-- Placeholder for Google Maps -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7439.728239802223!2d17.016665272744852!3d51.094389123595846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc26aef60d0eb%3A0x46286462cb3383eb!2sSky%20Tower!5e0!3m2!1spl!2spl!4v1742858801291!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!-- <img src="/api/placeholder/800/400" class="img-fluid w-100 h-100" alt="Mapa lokalizacji"> -->
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -876,13 +897,13 @@
 
     <!-- </header> -->
     <!--Main Navigation-->
-    
+
     <!--Main layout-->
     <!-- <main> -->
 
     <!-- </main> -->
     <!--Main layout-->
-    
+
     <!--Footer-->
     <!-- <footer> -->
 
